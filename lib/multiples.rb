@@ -2,8 +2,7 @@
 def collect_multiples(limit)
     #return array of numbers
     multiples = []
-    i = 1
-    while i < limit
+    for i in 1...limit
         multiples << i if (i % 3 == 0 || i % 5 == 0)
         i+=1
     end

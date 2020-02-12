@@ -9,8 +9,8 @@ class Multiples
 
     def collect_multiples
         multiples = []
-        i = 1
-        while i < self.limit
+        
+        for i in 1...limit
             multiples << i if (i % 3 == 0 || i % 5 == 0)
             i+=1
         end
